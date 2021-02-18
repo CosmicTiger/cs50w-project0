@@ -1,0 +1,83 @@
+.Shift {
+	background-color: $white;
+	color: $react-aqua;
+	height: 480px;
+	@extend %standard-position-relative;
+	top: 40%;
+	overflow: hidden;
+	width: 100%;
+
+	& > .row {
+		flex-wrap: nowrap;
+		font-size: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	&-elementA {
+		@include animation-property-compatibility(
+			$animation: elementA 2s linear infinite
+		);
+		font-size: 50px;
+		height: 80px;
+		position: relative;
+		// outline: 1px solid gray;
+		width: 10%;
+	}
+
+	&-elementB {
+		background-color: $react-aqua;
+		box-sizing: border-box;
+		color: $white;
+		height: 80px;
+		padding: 30px;
+		position: absolute;
+		width: 100%;
+	}
+
+	@media (min-width: 996px) {
+		top: 48%;
+	}
+
+	@media (max-width: 576px) {
+		& > .row {
+			margin-top: -18px;
+		}
+
+		&-elementA {
+			font-size: 30px;
+			height: 70px;
+		}
+
+		&-elementB {
+			padding: 0;
+		}
+	}
+}
+
+// Keyframes and cycles
+@for $i from 1 through 10 {
+	.Shift-elementA:nth-child(#{$i}) .Shift-elementB {
+		animation: elementB#{$i} 2s infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes elementB#{$i} {
+		0% {
+			transform: scale(0.2 * ($i - 1)) rotate(4deg * ($i - 1));
+		}
+		100% {
+			transform: scale(0.2 * $i) rotate(4deg * $i);
+		}
+	}
+}
+
+@keyframes elementA {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}

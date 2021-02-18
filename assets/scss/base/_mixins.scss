@@ -19,11 +19,26 @@
 	text-align: center;
 }
 
-%standard-position {
+%standard-position-relative {
+	position: relative;
 	bottom: 0;
 	top: 0;
 	right: 0;
 	left: 0;
+}
+
+%standard-position-absolute {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+%reallocating-backgroundImage {
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 // Mixins

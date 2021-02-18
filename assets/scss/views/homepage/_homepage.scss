@@ -1,0 +1,27 @@
+.Header {
+	background-image: url("#{$img-dir}persona5-backgroundHeader.jpg");
+	background-color: rgba(80, 90, 84, 0.5);
+	@extend %reallocating-backgroundImage;
+	color: $white;
+	height: 1280px;
+	position: relative;
+	opacity: 0.8;
+	width: 100%;
+
+	&-hero {
+		@include flex-container(column, center, center);
+		margin-left: 8%;
+		margin-right: 10%;
+		@extend %standard-position-relative;
+		top: 15%;
+		width: 78%;
+
+		& > h1 {
+			color: $white;
+		}
+
+		@media (min-width: 992px) {
+			flex-direction: row;
+		}
+	}
+}
