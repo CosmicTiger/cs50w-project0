@@ -1,76 +1,554 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My Webpage</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Luisangel Marcia Resume Webpage - Home</title>
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<header class="Header">
+			<nav class="navbar navbar-expand-lg bg-light Navbar">
+				<button
+					class="navbar-toggler Navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarToggler"
+					aria-controls="navbarToggler"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon Navbar-togglerIcon"> </span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>Home <span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdown"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link disabled"
-							href="#"
-							tabindex="-1"
-							aria-disabled="true"
-							>Disabled</a
-						>
-					</li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input
-						class="form-control mr-sm-2"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
+				<a class="navbar-brand Navbar-brand" href="#">
+					<img
+						src="assets/images/phantom_thieves_logo_hd_by_xnutellashooterx-dcz4i05.png"
+						width="30"
+						height="30"
+						class="align-top Navbar-brandImage"
+						alt="phantom-thieves-logo-lmarcia-favlogo"
 					/>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-						Search
-					</button>
-				</form>
+					<span class="Navbar-brandText">CosmicTiger - lmarcia</span>
+				</a>
+				<div
+					class="collapse navbar-collapse Navbar-collapse"
+					id="navbarToggler"
+				>
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 Navbar-nav">
+						<li class="nav-item Navbar-item active">
+							<i class="fas fa-laptop-house"></i>
+							<a class="nav-link Navbar-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item Navbar-item">
+							<i class="fas fa-graduation-cap"></i>
+							<a class="nav-link Navbar-link" href="./education.html"
+								>My education</a
+							>
+						</li>
+						<li class="nav-item Navbar-item">
+							<i class="fas fa-code"></i>
+							<a class="nav-link Navbar-link" href="./carrier.html"
+								>My carrier</a
+							>
+						</li>
+						<li class="nav-item Navbar-item">
+							<i class="fab fa-github-square"></i>
+							<a class="nav-link Navbar-link" href="./projects.html"
+								>My projects</a
+							>
+						</li>
+						<li class="nav-item Navbar-item">
+							<i class="fas fa-theater-masks"></i>
+							<a class="nav-link Navbar-link" href="./about.html">About me</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="Header-hero">
+				<div class="Header-headingWrapper">
+					<h1 class="Header-heading neon red">
+						Hello, I'm Luisangel Marcia and this is my Webpage
+					</h1>
+					<h2 class="Header-heading neon blue">Systems Engineer</h2>
+					<h3 class="Header-heading neon yellow">Software Developer</h3>
+				</div>
+
+				<div class="Header-description">
+					<div id="textWrapper">
+						<p>
+							I am a student of the System Engineering career at National
+							University of Engineering in Nicaragua with experience in the
+							field of Information Technology in which I have held positions
+							such as
+						</p>
+						<p>
+							<code>Git Master</code>, <code>Frontend Developer</code>,
+							<code>UX/UI Designer</code>,
+							<code>Database Administrator</code> and
+							<code>Educator in Computer Science</code>, my greatest motivation
+							is...
+						</p>
+						<p>
+							<q>
+								Deliver solutions to various needs through computer or
+								administration services applying my knowledge acquired through
+								my academic, professional and personal training, taking as an
+								objective to fulfill the goals, dreams, or mission/vision that a
+								company, organization or entrepeneurs that hire my services.
+							</q>
+						</p>
+					</div>
+				</div>
+
+				<div class="RotateCard">
+					<div class="RotateCard-box">
+						<div id="persona" class="RotateCard-card">
+							<div class="RotateCard-cardFront">
+								<span class="jokerImage"></span>
+							</div>
+							<div class="RotateCard-cardBack">
+								<img
+									src="assets/images/p5-based-luisangelmarciaprofile.jpeg"
+									width="280"
+									height="390"
+									id="profile"
+									class="align-top luisangelImage"
+									alt="lmarcia-realProfile"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</nav>
+
+			<div class="Shift">
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+					<div class="Shift-elementA">
+						•
+						<div class="Shift-elementB">•</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
@@ -90,6 +568,10 @@
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
 			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/1d1fe9e7b9.js"
 			crossorigin="anonymous"
 		></script>
 	</body>
