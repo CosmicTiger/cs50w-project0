@@ -10,8 +10,11 @@
 		}
 
 		&:hover .RotateCard-card .RotateCard-cardBack img#profile {
-			border: 0.2px solid $black;
 			border-radius: 3%;
+		}
+
+		@media (min-width: 768px) {
+			margin: 0;
 		}
 	}
 
@@ -28,14 +31,9 @@
 		width: 320px;
 	}
 
-	&-card#persona {
-		// background-color: #e31818;
-	}
-
 	&-cardFront,
 	&-cardBack {
 		backface-visibility: hidden;
-		// color: $white;
 		height: 100%;
 		@extend %standard-position-absolute;
 		width: 100%;
@@ -43,7 +41,6 @@
 
 	&-cardFront {
 		@include flex-container;
-		// font-size: 40px;
 	}
 
 	&-cardFront .jokerImage {
@@ -58,7 +55,6 @@
 
 	&-cardBack {
 		@include flex-container;
-		// font-size: 25px;
 		transform: rotateY(180deg);
 	}
 }

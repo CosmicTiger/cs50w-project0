@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Londrina+Outline");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -16002,7 +16003,7 @@ readers do not read off random characters that represent icons */
   flex-direction: row;
 }
 
-.Header-hero, .RotateCard-card, .Shift {
+.Header-description #textWrapper, .Header-hero, .RotateCard-card, .Shift {
   position: relative;
   bottom: 0;
   top: 0;
@@ -16092,7 +16093,7 @@ a:hover, a:active, a:focus, a:visited {
   background-color: #fff;
   color: #00bfff;
   height: 480px;
-  top: 40%;
+  top: 18%;
   overflow: hidden;
   width: 100%;
 }
@@ -16125,7 +16126,7 @@ a:hover, a:active, a:focus, a:visited {
 }
 @media (min-width: 996px) {
   .Shift {
-    top: 48%;
+    top: 38%;
   }
 }
 @media (max-width: 576px) {
@@ -16290,8 +16291,12 @@ a:hover, a:active, a:focus, a:visited {
   transform: rotateY(180deg);
 }
 .RotateCard-box:hover .RotateCard-card .RotateCard-cardBack img#profile {
-  border: 0.2px solid #000;
   border-radius: 3%;
+}
+@media (min-width: 768px) {
+  .RotateCard-box {
+    margin: 0;
+  }
 }
 .RotateCard-card {
   background: #fff;
@@ -16341,7 +16346,7 @@ a:hover, a:active, a:focus, a:visited {
   background-image: url("/assets/images/persona5-backgroundHeader.jpg");
   background-color: rgba(80, 90, 84, 0.5);
   color: #fff;
-  height: 1280px;
+  height: 2680px;
   position: relative;
   opacity: 0.8;
   width: 100%;
@@ -16356,7 +16361,7 @@ a:hover, a:active, a:focus, a:visited {
   flex-wrap: wrap;
   margin-left: 8%;
   margin-right: 10%;
-  top: 15%;
+  top: 6%;
   width: 78%;
 }
 .Header-hero > h1 {
@@ -16365,6 +16370,61 @@ a:hover, a:active, a:focus, a:visited {
 @media (min-width: 992px) {
   .Header-hero {
     flex-direction: row;
+    top: 15%;
+  }
+}
+.Header-heading.neon {
+  color: #fff;
+  font-family: "Londrina Outline", cursive;
+  font-size: calc(16px * 4em);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Header-heading.neon.red {
+  text-shadow: 0 0 5px #d63131, 0 0 10px #d63131, 0 0 20px #d63131, 0 0 40px #d63131, 0 0 80px #d63131, 0 0 90px #d63131, 0 0 100px #d63131, 0 0 150px #d63131;
+}
+.Header-heading.neon.blue {
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue, 0 0 90px blue, 0 0 100px blue, 0 0 150px blue;
+}
+.Header-heading.neon.yellow {
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow, 0 0 80px yellow, 0 0 90px yellow, 0 0 100px yellow, 0 0 150px yellow;
+}
+.Header-description {
+  color: #fff;
+  font-size: 100%;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  -moz-transform: skew(0deg);
+  -ms-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  -webkit-transform: skew(0deg);
+  transform: skew(0deg);
+}
+.Header-description #textWrapper {
+  background-color: #000;
+  border: 10px solid #fff;
+  box-shadow: 5px 5px 5px 5px #000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  z-index: 9;
+}
+@media (min-width: 768px) {
+  .Header-description {
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+  }
+}
+@media (min-width: 768px) {
+  .Header {
+    height: 1680px;
   }
 }
 

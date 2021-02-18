@@ -3,7 +3,7 @@
 	color: $react-aqua;
 	height: 480px;
 	@extend %standard-position-relative;
-	top: 40%;
+	top: 18%;
 	overflow: hidden;
 	width: 100%;
 
@@ -37,7 +37,7 @@
 	}
 
 	@media (min-width: 996px) {
-		top: 48%;
+		top: 38%;
 	}
 
 	@media (max-width: 576px) {
