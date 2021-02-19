@@ -1,0 +1,51 @@
+.Navbar {
+	position: absolute;
+
+	&-togglerIcon {
+		background-image: url("#{$img-dir}phantom_thieves_logo_hd_by_xnutellashooterx-dcz4i05.png");
+	}
+
+	&-brand {
+		display: none;
+	}
+
+	&-nav {
+		justify-content: space-evenly;
+		width: 60%;
+	}
+
+	&-link.nav-link {
+		color: rgba($black, 0.5);
+	}
+
+	&-item {
+		@extend %row;
+
+		& > .fas,
+		.fab {
+			color: $react-aqua;
+			margin-right: 20px;
+		}
+	}
+
+	@media (min-width: 577px) {
+		position: relative;
+
+		&-brand {
+			display: inline-block;
+		}
+
+		&-item {
+			& > .fas,
+			.fab {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		&-brand {
+			margin-right: 120px;
+		}
+	}
+}

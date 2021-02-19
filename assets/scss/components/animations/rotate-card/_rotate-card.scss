@@ -1,0 +1,60 @@
+.RotateCard {
+	padding-top: 65px;
+
+	&-box {
+		margin: 15px;
+		perspective: 500px;
+
+		&:hover .RotateCard-card {
+			transform: rotateY(180deg);
+		}
+
+		&:hover .RotateCard-card .RotateCard-cardBack img#profile {
+			border-radius: 3%;
+		}
+
+		@media (min-width: 768px) {
+			margin: 0;
+		}
+	}
+
+	&-card {
+		background: $white;
+		border: 0.6px solid $black;
+		border-radius: 5%;
+		box-shadow: 0 30px 30px rgba($black, 0.5);
+		cursor: pointer;
+		height: 440px;
+		@extend %standard-position-relative;
+		transform-style: preserve-3d;
+		transition: 0.25s ease;
+		width: 320px;
+	}
+
+	&-cardFront,
+	&-cardBack {
+		backface-visibility: hidden;
+		height: 100%;
+		@extend %standard-position-absolute;
+		width: 100%;
+	}
+
+	&-cardFront {
+		@include flex-container;
+	}
+
+	&-cardFront .jokerImage {
+		background-image: url("#{$img-dir}jokerawesome2.jpg");
+		border-radius: 3%;
+		box-sizing: content-box;
+		display: block;
+		height: 390px;
+		@extend %reallocating-backgroundImage;
+		width: 280px;
+	}
+
+	&-cardBack {
+		@include flex-container;
+		transform: rotateY(180deg);
+	}
+}

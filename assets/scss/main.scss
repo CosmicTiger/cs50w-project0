@@ -1,0 +1,13 @@
+// 3rd party styles
+@import "vendor/vendor";
+
+// 1st party Styles
+@import "base/base";
+
+// Components Styles
+@import "components/navbar/navbar";
+@import "components/animations/shift/shift";
+@import "components/animations/rotate-card/rotate-card";
+
+// Views Styles
+@import "views/homepage/homepage";
