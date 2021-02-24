@@ -1,5 +1,6 @@
 .Navbar {
 	position: absolute;
+	z-index: 10;
 
 	&-togglerIcon {
 		background-image: url("#{$img-dir}phantom_thieves_logo_hd_by_xnutellashooterx-dcz4i05.png");
@@ -18,13 +19,52 @@
 		color: rgba($black, 0.5);
 	}
 
-	&-item {
+	&-link.link-wrapper {
+		display: inline-block;
+		@extend %standard-position-relative;
+	}
+
+	&-link.link-wrapper .fallback {
+		letter-spacing: 2px;
+		line-height: 0;
+		// opacity: 0;
+		@extend %standard-position-relative;
+		// top: 15px;
+	}
+
+	&-link.link-wrapper .shape-wrapper {
+		display: none;
+		@extend %standard-position-absolute;
+	}
+
+	&-link.link-wrapper:hover .fallback {
+		color: $white;
+		transform: scale(1.5) rotate(-16deg) translateX(10px);
+		z-index: 10;
+
+		.fas, .fab {
+			left: 4px;
+		}
+	}
+
+	&-link.link-wrapper:hover .shape-wrapper {
+		display: block;
+		transform: translateX(-23px) translateY(-8px) rotate(-6deg);
+		width: 147px;
+
+		.shape.cyan-fill {
+			transform: scale(3, .1);
+		}
+	}
+
+	&-item  {
 		@extend %row;
 
-		& > .fas,
-		.fab {
-			color: $react-aqua;
-			margin-right: 20px;
+		.Navbar-link .fallback {
+			& > .fas,
+			.fab {
+				@extend %standard-position-relative;
+			}
 		}
 	}
 
@@ -47,5 +87,89 @@
 		&-brand {
 			margin-right: 120px;
 		}
+	}
+}
+
+.shape-wrapper {
+	filter: sepia(50%) saturate(3);
+	.shape {
+		height: 35px;
+		transition: all .1s linear;
+		@extend %standard-position-absolute;
+		overflow: hidden;
+
+		svg {
+			@extend %standard-position-absolute;
+		}
+
+		&.cyan-fill {
+			mix-blend-mode: screen;
+			animation-delay: 0.05s;
+			animation-duration: .4s;
+		}
+
+		&.red-fill {
+			animation-duration: .45s;
+			animation-delay: 0.08s;
+			opacity: .8;
+		}
+	}
+}
+
+.jelly {
+	-webkit-animation-name: jelly;
+	animation-name: jelly;
+	-webkit-transform-origin: jelly;
+	transform-origin: jelly;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@keyframes tiltBounce {
+	0% {
+		transform: scale(1) rotate(-7deg);
+	}
+	50% {
+		transform: scale(1.5) rotate(-7deg);
+	}
+	100% {
+		transform: scale(1.15) rotate(-7deg);
+	}
+}
+
+@keyframes tiltBounceAlt {
+	0% {
+		transform: scale(1) rotate(7deg);
+	}
+	50% {
+		transform: scale(1.5) rotate(7deg);
+	}
+	100% {
+		transform: scale(1.15) rotate(7deg);
+	}
+}
+
+@keyframes jelly {
+	0% {
+		transform:
+			scale(1.25, 1) skewX(20deg)
+			translateY(3px) rotateX(40deg)
+			rotateY(10deg) rotateZ(-10deg);
+		width: 100%;
+	}
+	50% {
+		transform:
+			scale(1.25, 1.1) skewX(-15deg)
+			translateY(-2px) translateZ(-30px);
+		width: 100%;
+	}
+	100% {
+		transform:
+			scale(1.25, 1) skewX(20deg)
+			translateY(3px) rotateX(-40deg)
+			rotateY(-10deg) rotateZ(-15deg);
+		width: 100%;
 	}
 }

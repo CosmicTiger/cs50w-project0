@@ -1,0 +1,107 @@
+.GridTable {
+    background-color: $black;
+    border: 8px solid $white;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    max-width: 1150px;
+    padding: 1em 0;
+    position: relative;
+    right: 43px;
+    width: 64%;
+
+    caption {
+        align-self: center;
+        color: $white;
+        font-size: calc(#{$big-size} + 4px);
+        padding: .5em;
+    }
+
+    &-row {
+        border-bottom: 1px solid $white;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-gap: 3em;
+        margin: auto;
+        padding: 1em 0;
+    }
+
+    &-cell {
+        border-bottom: unset;
+        font-size: 20px;
+
+        &:first-child {
+            text-align: right;
+        }
+
+        &.technologies {
+
+            span[data-title]::before {
+                content: attr(data-title);
+                display: none;
+                font-size: $standard-size;
+                font-weight: $semiBold-weight;
+            }
+
+            ul {
+                @extend %standard-position-relative;
+            }
+        }
+    }
+
+    @media (max-width: 769px) {
+        right: 0;
+        width: 100%;
+
+        &-head {
+            display: none;
+        }
+
+        &-row {
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+            padding: 10px 10px;
+        }
+
+        &-cell {
+            font-size: 14px;
+
+            &:first-child {
+                font-weight: $bold-weight;
+                margin: 0;
+                text-align: left;
+            }
+
+            &.name {
+                font-style: italic;
+                margin-top: -10px;
+                order: 1;
+            }
+
+            &.description {
+                order: 2;
+            }
+
+            &.status {
+                order: 3;
+            }
+
+            &.technologies {
+                order: 4;
+
+                span[data-title]::before {
+                    display: inline-block;
+                }
+
+                ul {
+                    left: 30px;
+                }
+            }
+
+            &.repositories {
+                order: 5;
+            }
+
+        }
+    }
+}

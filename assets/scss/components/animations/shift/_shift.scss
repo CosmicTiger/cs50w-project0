@@ -1,9 +1,9 @@
 .Shift {
-	background-color: $white;
-	color: $react-aqua;
+	background-color: $black;
+	color: $basic-blue;
 	height: 480px;
 	@extend %standard-position-relative;
-	top: 18%;
+	top: 32%;
 	overflow: hidden;
 	width: 100%;
 
@@ -27,9 +27,9 @@
 	}
 
 	&-elementB {
-		background-color: $react-aqua;
+		background-color: $basic-blue;
 		box-sizing: border-box;
-		color: $white;
+		color: $black;
 		height: 80px;
 		padding: 30px;
 		position: absolute;
@@ -37,7 +37,7 @@
 	}
 
 	@media (min-width: 996px) {
-		top: 38%;
+		top: 43%;
 	}
 
 	@media (max-width: 576px) {
