@@ -1,0 +1,20 @@
+.Footer {
+    background: $black;
+    color: $white;
+    padding: 2em;
+    text-align: center;
+
+    & > a {
+        color: $react-aqua;
+        text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+
+        & div {
+            grid-column: span 2;
+        }
+    }
+}
