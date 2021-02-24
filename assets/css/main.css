@@ -12408,7 +12408,7 @@ readers do not read off random characters that represent icons */
   right: 0;
   left: 0; }
 
-.Header, .RotateCard-cardFront .jokerImage, .SkillsCard-image, .Projects, .Skills {
+.Header, .RotateCard-cardFront .jokerImage, .SkillsCard-image, .Projects, .Skills, .Career {
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -12520,7 +12520,7 @@ a {
   .Navbar-link.link-wrapper {
     display: inline-block; }
   .Navbar-link.link-wrapper .fallback {
-    letter-spacing: 2px;
+    letter-spacing: 0;
     line-height: 0; }
   .Navbar-link.link-wrapper .shape-wrapper {
     display: none; }
@@ -12900,6 +12900,21 @@ a {
       .SkillsCard-image {
         top: -8px; } }
 
+.Footer {
+  background: #000;
+  color: #fff;
+  padding: 2em;
+  text-align: center; }
+  .Footer > a {
+    color: #00bfff;
+    text-decoration: none; }
+  @media (min-width: 768px) {
+    .Footer {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+      .Footer div {
+        grid-column: span 2; } }
+
 #homepage.Header .Shift {
   top: 27%; }
 
@@ -12991,5 +13006,37 @@ a {
       .Skills-cardWrapper {
         grid-template-columns: repeat(2, 1fr);
         width: 45%; } }
+
+#career.Header {
+  height: 560px; }
+  #career.Header-hero {
+    padding-top: 20px; }
+  #career.Header-description {
+    margin-bottom: 0px;
+    margin-top: 20px; }
+  @media (min-width: 768px) {
+    #career.Header {
+      height: 620px; }
+      #career.Header-hero {
+        padding-top: 0px; }
+      #career.Header-description {
+        margin-top: 60px; } }
+
+.Career {
+  background-image: none;
+  background-color: red;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .Career {
+      background-image: url("../images/tableMenu.jpeg"); } }
 
 /*# sourceMappingURL=main.css.map */
