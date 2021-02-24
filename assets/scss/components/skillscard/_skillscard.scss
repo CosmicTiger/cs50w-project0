@@ -1,0 +1,69 @@
+.SkillsCard {
+    @include flex-container(column, flex-start, flex-start);
+    padding: 1rem;
+    width: clamp(23ch, 50%, 46ch);
+
+    &-imageWrapper {
+        background-color: $white;
+        border: 1px solid $black;
+        height: 125px;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    &-image {
+        @extend %reallocating-backgroundImage;
+        background-size: contain;
+		box-sizing: content-box;
+		display: block;
+		height: 120px;
+		@extend %standard-position-relative;
+		top: -8px;
+		width: 170px;
+
+		&.archlinux {
+		    background-image: url("#{$img-dir}archlinux-1.png");
+		}
+
+        &.apache {
+            background-image: url("#{$img-dir}apache.png");
+        }
+
+		&.blackarch {
+		    background-image: url("#{$img-dir}blackarch.png");
+		}
+
+		&.debian {
+		    background-image: url("#{$img-dir}debian.png");
+		}
+
+		&.git {
+		    background-image: url("#{$img-dir}git.png");
+		}
+
+		&.github {
+		    background-image: url("#{$img-dir}github.png");
+		}
+
+		&.gitlab {
+		    background-image: url("#{$img-dir}gitlab.png");
+		}
+
+		&.golang {
+		    background-image: url("#{$img-dir}golang-flaticon.png");
+		}
+
+		&.html-css-js {
+		    background-image: url("#{$img-dir}html-css-js.png");
+		}
+    }
+
+    @media (min-width: 768px) {
+        width: 100%;
+
+        &-image {
+            top: -8px;
+        }
+    }
+}

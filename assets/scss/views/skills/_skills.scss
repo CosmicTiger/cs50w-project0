@@ -1,0 +1,57 @@
+#skills.Header {
+    height: 600px;
+
+    &-hero {
+        padding-top: 20px;
+    }
+
+    &-description {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+        height: 580px;
+
+        &-hero {
+            padding-top: 20px;
+        }
+
+        &-description {
+            margin-top: 60px;
+        }
+    }
+}
+
+.Skills {
+    background-image: none;
+	background-color: rgba($basic-red, 1);
+	@extend %reallocating-backgroundImage;
+	color: $white;
+	@include flex-container(row, flex-start, center);
+	height: 100%;
+	padding: 20px;
+	width: 100%;
+
+	&-cardWrapper {
+        background-color: $black;
+        border: 8px solid $white;
+        display: grid;
+        height: auto;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        width: 100%;
+	}
+
+	@media (min-width: 768px) {
+	    background-image: url("#{$img-dir}skillsBackground.jpg");
+	    background-position: right;
+	    padding: 0px;
+
+	    &-cardWrapper {
+	        grid-template-columns: repeat(2, 1fr);
+	        width: 45%;
+	    }
+	}
+}
