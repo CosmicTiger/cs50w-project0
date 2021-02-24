@@ -5,9 +5,12 @@
 @import "base/base";
 
 // Components Styles
+@import "components/header/header";
 @import "components/navbar/navbar";
 @import "components/animations/shift/shift";
 @import "components/animations/rotate-card/rotate-card";
+@import "components/grid-table/grid-table";
 
 // Views Styles
 @import "views/homepage/homepage";
+@import "views/projects/projects";

@@ -1,0 +1,85 @@
+.Header {
+    background-image: url("#{$img-dir}persona5-backgroundHeader.jpg");
+	background-color: rgba(80, 90, 84, 0.5);
+	@extend %reallocating-backgroundImage;
+	color: $white;
+	position: relative;
+	opacity: 0.8;
+	width: 100%;
+
+	&-hero {
+		@include flex-container(column, center, center);
+		margin-left: 8%;
+		margin-right: 10%;
+		@extend %standard-position-relative;
+		top: 6%;
+		width: 78%;
+
+		& > h1 {
+			color: $white;
+		}
+
+		@media (min-width: 992px) {
+			flex-direction: row;
+			top: 15%;
+		}
+	}
+
+	&-heading.neon {
+		color: $white;
+		font-family: $londrina-outline;
+		font-size: calc(#{$standard-size} * 4em);
+		font-weight: $semiBold-weight;
+		letter-spacing: 0.15em;
+		text-align: center;
+		text-transform: uppercase;
+
+		&.red {
+			text-shadow: 0 0 5px $opera-red, 0 0 10px $opera-red, 0 0 20px $opera-red,
+				0 0 40px $opera-red, 0 0 80px $opera-red, 0 0 90px $opera-red,
+				0 0 100px $opera-red, 0 0 150px $opera-red;
+		}
+
+		&.blue {
+			text-shadow: 0 0 5px $basic-blue, 0 0 10px $basic-blue,
+				0 0 20px $basic-blue, 0 0 40px $basic-blue, 0 0 80px $basic-blue,
+				0 0 90px $basic-blue, 0 0 100px $basic-blue, 0 0 150px $basic-blue;
+		}
+
+		&.yellow {
+			text-shadow: 0 0 5px $basic-yellow, 0 0 10px $basic-yellow,
+				0 0 20px $basic-yellow, 0 0 40px $basic-yellow, 0 0 80px $basic-yellow,
+				0 0 90px $basic-yellow, 0 0 100px $basic-yellow, 0 0 150px $basic-yellow;
+		}
+	}
+
+	&-description {
+		color: $white;
+		font-size: 100%;
+		margin-bottom: 50px;
+		margin-top: 100px;
+		padding-bottom: 10px;
+		@include transform-property-compatibility(skew(0deg));
+		width: 100%;
+
+		& #textWrapper {
+			background-color: $black;
+			border: 10px solid $white;
+			box-shadow: 5px 5px 5px 5px $black;
+			@extend %standard-position-relative;
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+			z-index: 9;
+		}
+
+		@media (min-width: 768px) {
+			@include transform-property-compatibility(skew(-20deg));
+		}
+	}
+
+	@media (min-width: 768px) {
+		height: 1680px;
+	}
+}
