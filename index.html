@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
 	<body>
-		<header class="Header">
+		<header id="homepage" class="Header">
 			<nav class="navbar navbar-expand-lg bg-light Navbar">
 				<button
 					class="navbar-toggler Navbar-toggler"
@@ -21,6 +21,10 @@
 				>
 					<span class="navbar-toggler-icon Navbar-togglerIcon"> </span>
 				</button>
+
+				<audio id="chains" preload="auto">
+					<source src="http://www.img.kevinquach.ca/wp-content/uploads/2017/04/chain-sound.mp3" controls></source>
+				</audio>
 
 				<a class="navbar-brand Navbar-brand" href="#">
 					<img
@@ -38,32 +42,129 @@
 				>
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 Navbar-nav">
 						<li class="nav-item Navbar-item active">
-							<i class="fas fa-laptop-house"></i>
-							<a class="nav-link Navbar-link" href="#"
-								>Home <span class="sr-only">(current)</span></a
-							>
+							<a class="nav-link Navbar-link link-wrapper audio" href="#"
+								>
+								<p class="fallback">
+									<i class="fas fa-laptop-house"></i>
+									Home <span class="sr-only">(current)</span>
+								</p>
+								<div class="shape-wrapper">
+									<div class="shape red-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+										</svg>
+									</div>
+									<div class="shape cyan-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#0000FF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</li>
 						<li class="nav-item Navbar-item">
-							<i class="fas fa-graduation-cap"></i>
-							<a class="nav-link Navbar-link" href="./education.html"
-								>My education</a
-							>
+							<a class="nav-link Navbar-link link-wrapper audio" href="./skills.html"
+								>
+								<p class="fallback">
+									<i class="fas fa-code"></i>
+									Skills
+								</p>
+								<div class="shape-wrapper">
+									<div class="shape red-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+										</svg>
+									</div>
+									<div class="shape cyan-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#0000FF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</li>
 						<li class="nav-item Navbar-item">
-							<i class="fas fa-code"></i>
-							<a class="nav-link Navbar-link" href="./carrier.html"
-								>My carrier</a
-							>
+							<a class="nav-link Navbar-link link-wrapper audio" href="./career.html"
+								>
+								<p class="fallback">
+									<i class="fas fa-graduation-cap"></i>
+									Career
+								</p>
+								<div class="shape-wrapper">
+									<div class="shape red-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+										</svg>
+									</div>
+									<div class="shape cyan-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#0000FF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</li>
 						<li class="nav-item Navbar-item">
-							<i class="fab fa-github-square"></i>
-							<a class="nav-link Navbar-link" href="./projects.html"
-								>My projects</a
-							>
+							<a class="nav-link Navbar-link link-wrapper audio" href="./projects.html"
+								>
+								<p class="fallback">
+									<i class="fab fa-github-square"></i>
+									Projects
+								</p>
+								<div class="shape-wrapper">
+									<div class="shape red-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+										</svg>
+									</div>
+									<div class="shape cyan-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#0000FF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</li>
 						<li class="nav-item Navbar-item">
-							<i class="fas fa-theater-masks"></i>
-							<a class="nav-link Navbar-link" href="./about.html">About me</a>
+							<a class="nav-link Navbar-link link-wrapper audio" href="./about.html"
+								>
+								<p class="fallback">
+									<i class="fas fa-theater-masks"></i>
+									About
+								</p>
+								<div class="shape-wrapper">
+									<div class="shape red-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#FF0000" points="29.5,8.5 150.7,0 108.1,32.7 3.1,47 "/>
+										</svg>
+									</div>
+									<div class="shape cyan-fill jelly">
+										<svg x="0px" y="0px"
+											viewBox="0 0 108.1 47" enable-background="new 0 0 108.1 47"
+										>
+											<polygon fill="#0000FF" points="0.3,17 125.1,0 68.8,45.6 24.3,39 "/>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -549,7 +650,9 @@
 				</div>
 			</div>
 		</header>
+		<main id="homeContent" class="Home">
 
+		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
@@ -574,5 +677,11 @@
 			src="https://kit.fontawesome.com/1d1fe9e7b9.js"
 			crossorigin="anonymous"
 		></script>
+		<script
+			id="rendered-js"
+		>
+			var audio = document.getElementsByTagName("audio")[0];
+			audio.play();
+		</script>
 	</body>
 </html>
