@@ -12394,7 +12394,7 @@ readers do not read off random characters that represent icons */
   flex-direction: row; }
 
 .Header-hero, .Header-description #textWrapper, .Navbar-link.link-wrapper, .Navbar-link.link-wrapper .fallback, .Navbar-item .Navbar-link .fallback > .fas,
-.Navbar-item .Navbar-link .fallback .fab, .Shift, .RotateCard-card, .GridTable-cell.technologies ul {
+.Navbar-item .Navbar-link .fallback .fab, .Shift, .RotateCard-card, .GridTable-cell.technologies ul, .SkillsCard-image {
   position: relative;
   bottom: 0;
   top: 0;
@@ -12408,7 +12408,7 @@ readers do not read off random characters that represent icons */
   right: 0;
   left: 0; }
 
-.Header, .RotateCard-cardFront .jokerImage, .Projects {
+.Header, .RotateCard-cardFront .jokerImage, .SkillsCard-image, .Projects, .Skills {
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -12852,6 +12852,54 @@ a {
         .GridTable-cell.repositories {
           order: 5; } }
 
+.SkillsCard {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: clamp(23ch, 50%, 46ch); }
+  .SkillsCard-imageWrapper {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 125px;
+    padding: 10px;
+    position: relative;
+    width: 100%; }
+  .SkillsCard-image {
+    background-size: contain;
+    box-sizing: content-box;
+    display: block;
+    height: 120px;
+    top: -8px;
+    width: 170px; }
+    .SkillsCard-image.archlinux {
+      background-image: url("../images/archlinux-1.png"); }
+    .SkillsCard-image.apache {
+      background-image: url("../images/apache.png"); }
+    .SkillsCard-image.blackarch {
+      background-image: url("../images/blackarch.png"); }
+    .SkillsCard-image.debian {
+      background-image: url("../images/debian.png"); }
+    .SkillsCard-image.git {
+      background-image: url("../images/git.png"); }
+    .SkillsCard-image.github {
+      background-image: url("../images/github.png"); }
+    .SkillsCard-image.gitlab {
+      background-image: url("../images/gitlab.png"); }
+    .SkillsCard-image.golang {
+      background-image: url("../images/golang-flaticon.png"); }
+    .SkillsCard-image.html-css-js {
+      background-image: url("../images/html-css-js.png"); }
+  @media (min-width: 768px) {
+    .SkillsCard {
+      width: 100%; }
+      .SkillsCard-image {
+        top: -8px; } }
+
 #homepage.Header .Shift {
   top: 27%; }
 
@@ -12896,5 +12944,52 @@ a {
   @media (min-width: 768px) {
     .Projects {
       background-image: url("../images/tableMenu.jpeg"); } }
+
+#skills.Header {
+  height: 600px; }
+  #skills.Header-hero {
+    padding-top: 20px; }
+  #skills.Header-description {
+    margin-bottom: 0px;
+    margin-top: 20px; }
+  @media (min-width: 768px) {
+    #skills.Header {
+      height: 580px; }
+      #skills.Header-hero {
+        padding-top: 20px; }
+      #skills.Header-description {
+        margin-top: 60px; } }
+
+.Skills {
+  background-image: none;
+  background-color: red;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 20px;
+  width: 100%; }
+  .Skills-cardWrapper {
+    background-color: #000;
+    border: 8px solid #fff;
+    display: grid;
+    height: auto;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    width: 100%; }
+  @media (min-width: 768px) {
+    .Skills {
+      background-image: url("../images/skillsBackground.jpg");
+      background-position: right;
+      padding: 0px; }
+      .Skills-cardWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        width: 45%; } }
 
 /*# sourceMappingURL=main.css.map */
